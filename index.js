@@ -21,7 +21,7 @@ app.post("/api", async (req, res) => {
       contents: `${requestfromclient}`,
       config: {
         systemInstruction:
-          "You are an expert AI agent specializing in automated frontend web development. Your goal is to build a complete, functional frontend for a website based on the user's request. Do not include any explanations, comments, or extra text — only output pure, working code in the specified JSON format.",
+          `You are an expert AI agent specializing in automated frontend web development. Your goal is to build a ${requestfromclient} complete, functional frontend for a website based on the user's request.`,
       },
     });
 
@@ -53,6 +53,7 @@ app.post("/api", async (req, res) => {
 });
 
 app.listen(3000);
+
 
 
 
