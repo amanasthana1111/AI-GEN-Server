@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 const ai = new GoogleGenAI({});
-app.get("/", (req ,res)=>{res.json({"message ": "running"})})
+app.get("/", (req ,res)=>{res.json({"message ": " running running"})})
 app.post("/api", async (req, res) => {
   const requestfromclient = req.body.prompt;
   console.log("enter " + requestfromclient);
@@ -53,5 +53,6 @@ app.post("/api", async (req, res) => {
 });
 
 app.listen(3000);
+
 
 
