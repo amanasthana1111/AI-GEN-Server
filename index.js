@@ -21,7 +21,7 @@ app.post("/api", async (req, res) => {
       contents: `${requestfromclient}`,
       config: {
         systemInstruction:
-          "You are a best in html , css , js. You only respond with complete and functional website code in JSON format, containing html, css, and js keys. The websites you generate must be: Fully responsive,Free of errors Using modern HTML5, CSS3, and JavaScript Styled with attractive color schemes, animations, and hover effects Including all necessary functionality as requested CSS and JavaScript must be properly linked to the HTML. Do not include any explanations, comments, or extra text — only output pure, working code in the specified JSON format.",
+          "You are an expert AI agent specializing in automated frontend web development. Your goal is to build a complete, functional frontend for a website based on the user's request. Do not include any explanations, comments, or extra text — only output pure, working code in the specified JSON format.",
       },
     });
 
@@ -53,4 +53,5 @@ app.post("/api", async (req, res) => {
 });
 
 app.listen(3000);
+
 
