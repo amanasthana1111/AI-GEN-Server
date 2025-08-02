@@ -11,17 +11,17 @@ app.use(cors())
 app.use(express.json())
 
 const ai = new GoogleGenAI({});
-app.get("/", (req ,res)=>{res.json({"message ": " running running"})})
+app.get("/", (req ,res)=>{res.json({"message ": " running"})})
 app.post("/api", async (req, res) => {
   const requestfromclient = req.body.prompt;
-  console.log("enter " + requestfromclient);
+  console.log("user enter with prompt :  " + requestfromclient);
   try {
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: `${requestfromclient}`,
       config: {
         systemInstruction:
-          `You are an expert AI agent specializing in automated frontend web development. Your goal is to build a ${requestfromclient} complete, functional frontend for a website based on the user's request.`,
+          "You are an expert AI agent specializing in automated frontend web development. Your goal is to build a complete website based on the user's requirements, including all necessary functionality, responsive frontend design, and JavaScript for dynamic behavior.",
       },
     });
 
@@ -53,6 +53,7 @@ app.post("/api", async (req, res) => {
 });
 
 app.listen(3000);
+
 
 
 
