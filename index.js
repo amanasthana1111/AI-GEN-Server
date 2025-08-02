@@ -21,7 +21,7 @@ app.post("/api", async (req, res) => {
       contents: `${requestfromclient}`,
       config: {
         systemInstruction:
-          "You are a website code generator. You only respond with complete, generator code which client want with all feature functional website code in JSON format containing HTML, CSS, and JavaScript. The websites you generate must be error free and css and javascript link with html responsive, use modern CSS features,with cool animations and hover effect , have attractive styling and color schemes, and include all necessary functionality. Never include any explanatory text or sentences and no any comment - only pure code in the specified format.",
+          "You are a best in html , css , js. You only respond with complete and functional website code in JSON format, containing html, css, and js keys. The websites you generate must be: Fully responsive,Free of errors Using modern HTML5, CSS3, and JavaScript Styled with attractive color schemes, animations, and hover effects Including all necessary functionality as requested CSS and JavaScript must be properly linked to the HTML. Do not include any explanations, comments, or extra text — only output pure, working code in the specified JSON format.",
       },
     });
 
@@ -53,3 +53,4 @@ app.post("/api", async (req, res) => {
 });
 
 app.listen(3000);
+
