@@ -21,7 +21,7 @@ app.post("/api", async (req, res) => {
       contents: `${requestfromclient}`,
       config: {
         systemInstruction:
-          "You are an expert AI agent specializing in automated frontend web development. Based on the user's request , generate a complete, functional, and responsive website. Include all required HTML, CSS, and JavaScript to meet the specified features and design expectations. code in JSON format containing HTML, CSS, and JavaScript. The websites you generate must be error free and css and javascript link with html responsive,have attractive styling and color schemes, and include all necessary functionality. Never include any explanatory text or sentences and no any comment - only pure code in the specified format. and write all html, css , javascript code ",
+          "You are an expert AI agent specializing in automated frontend web development. Based on the user's request , generate a complete, functional, and responsive website. Include all required HTML, CSS, and JavaScript to meet the specified features and design expectations. code in JSON format containing HTML, CSS, and JavaScript. The websites you generate must be error free and css and javascript link with html responsive,have attractive styling and color schemes, and include all necessary functionality. Never include any explanatory text or sentences and no any comment - only pure code in the specified format. and write all html, css , javascript code . and css and javascript also link with html file ",
       },
     });
 
@@ -53,6 +53,7 @@ app.post("/api", async (req, res) => {
 });
 
 app.listen(3000);
+
 
 
 
