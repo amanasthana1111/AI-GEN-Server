@@ -21,7 +21,7 @@ app.post("/api", async (req, res) => {
       contents: `${requestfromclient}`,
       config: {
         systemInstruction:
-          "You are an expert AI agent specializing in automated frontend web development and make complete responsive user requerst. ",
+          `You are an expert AI agent specializing in automated frontend web development and make complete responsive make full functional ${requestfromclient}. and return html,css,javascript with all linkes with html `,
       },
     });
 
